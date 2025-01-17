@@ -37,6 +37,7 @@ import { Navbar } from '../UtilComponents/Navbar';
 import { NavigraphPage } from './Pages/NavigraphPage/NavigraphPage';
 import { getPdfUrl, LocalFilesPage } from './Pages/LocalFilesPage/LocalFilesPage';
 import { PinnedChartUI } from './Pages/PinnedChartsPage';
+import { MSFS2024Charts } from './Pages/MSFS2024ChartsPage/LocalFilesPage';
 import { useNavigraphAuth } from '../../react/navigraph';
 import { navigraphCharts } from '../../navigraph';
 
@@ -44,6 +45,7 @@ export const navigationTabs: (PageLink & { associatedTab: NavigationTab })[] = [
   { name: 'Navigraph', alias: '', component: <NavigraphPage />, associatedTab: NavigationTab.NAVIGRAPH },
   { name: 'Local Files', alias: '', component: <LocalFilesPage />, associatedTab: NavigationTab.LOCAL_FILES },
   { name: 'Pinned Charts', alias: '', component: <PinnedChartUI />, associatedTab: NavigationTab.PINNED_CHARTS },
+  { name: 'MSFS2024 Charts', alias: '', component: <MSFS2024Charts />, associatedTab: NavigationTab.MSFS2024Charts },
 ];
 
 export const Navigation = () => {
@@ -53,6 +55,7 @@ export const Navigation = () => {
     navigationTabs[0].alias = t('NavigationAndCharts.Navigraph.Title');
     navigationTabs[1].alias = t('NavigationAndCharts.LocalFiles.Title');
     navigationTabs[2].alias = t('NavigationAndCharts.PinnedCharts.Title');
+    navigationTabs[3].alias = t('NavigationAndCharts.MSFS2024Charts.Title');
   }
 
   return (

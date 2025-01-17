@@ -230,6 +230,18 @@
       "Pdf": "Pdf",
       "Retry": "Retry",
       "Title": "Local Files"
+      
+    },
+    "MSFS2024Charts": {
+      "Both": "Both",
+      "EstablishingConnection": "Establishing Connection",
+      "FailedToEstablishConnection": "Failed to Establish Connection.",
+      "FileName": "File Name",
+      "Image": "Image",
+      "Pdf": "Pdf",
+      "Retry": "Retry",
+      "Title": "MSFS2024 charts"
+      
     },
     "Navigraph": {
       "AirportDoesNotExist": "Airport Does Not Exist",
@@ -684,7 +696,8 @@
     },
     "ThirdPartyOptions": {
       "TT": {
-        "OverrideSimBriefUserID": "Alternative SimBrief user ID to use instead of the linked Navigraph Account"
+        "OverrideSimBriefUserID": "Alternative SimBrief user ID to use instead of the linked Navigraph Account",
+        "MSFS2024ApiToken": "Your api token has been set"
       },
       "NavigraphAccountLink": {
         "SettingTitle": "Navigraph Account Link",
@@ -701,6 +714,7 @@
         }
       },
       "OverrideSimBriefUserID": "Override SimBrief User ID",
+      "MSFS2024ApiToken": "MSFS 2024 api token",
       "YourSimBriefPilotIdHasBeenValidatedAndUpdatedTo": "The override SimBrief PilotID has been validated and updated to",
       "PleaseCheckThatYouHaveCorrectlyEnteredYourSimBriefUsernameOrPilotId": "Please check that you have correctly entered your SimBrief username or pilot ID.",
       "GsxFuelEnabled": "GSX Fueling Synchronization",

@@ -232,6 +232,16 @@
       "Retry": "Réessayer",
       "Title": "Fichiers locaux"
     },
+    "MSFS2024Charts": {
+      "Both": "Les deux",
+      "EstablishingConnection": "Connexion en cours",
+      "FailedToEstablishConnection": "Impossible d'établir la connexion.",
+      "FileName": "Nom du fichier",
+      "Image": "Images",
+      "Pdf": "PDF",
+      "Retry": "Réessayer",
+      "Title": "Cartes MSFS2024"
+    },
     "Navigraph": {
       "AirportDoesNotExist": "L'aéroport n'existe pas",
       "AuthenticateWithNavigraph": "S'authentifier avec Navigraph",

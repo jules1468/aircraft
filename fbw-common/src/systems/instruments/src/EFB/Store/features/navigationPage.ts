@@ -16,12 +16,14 @@ type ThemedChart = {
 export enum ChartProvider {
   NAVIGRAPH = 'NAVIGRAPH',
   LOCAL_FILES = 'LOCAL_FILES',
+  MSFS2024Charts = 'MSFS2024Charts',
 }
 
 export enum NavigationTab {
   NAVIGRAPH = 'NAVIGRAPH',
   LOCAL_FILES = 'LOCAL_FILES',
   PINNED_CHARTS = 'PINNED_CHARTS',
+  MSFS2024Charts = 'MSFS2024Charts',
 }
 
 export type ProviderTab = Exclude<NavigationTab, NavigationTab.PINNED_CHARTS>;
@@ -86,6 +88,7 @@ interface InitialChartState {
   usingDarkTheme: boolean;
   [NavigationTab.NAVIGRAPH]: NavigraphProviderTabInfo;
   [NavigationTab.LOCAL_FILES]: LocalFilesTabInfo;
+  [NavigationTab.MSFS2024Charts]: LocalFilesTabInfo;
   [NavigationTab.PINNED_CHARTS]: {
     searchQuery: string;
     selectedProvider: ChartProvider | 'ALL';
@@ -137,6 +140,32 @@ const initialState: InitialChartState = {
     },
   },
   [NavigationTab.LOCAL_FILES]: {
+    chartRotation: 0,
+    searchQuery: '',
+    selectedTabType: 'PDF',
+    isFullScreen: false,
+    chartDimensions: {
+      width: 0,
+      height: 0,
+    },
+    chartName: {
+      light: '',
+      dark: '',
+    },
+    chartId: '',
+    chartLinks: {
+      light: '',
+      dark: '',
+    },
+    pagesViewable: 1,
+    currentPage: 1,
+    chartPosition: {
+      positionX: 0,
+      positionY: 0,
+      scale: 1,
+    },
+  },
+  [NavigationTab.MSFS2024Charts]: {
     chartRotation: 0,
     searchQuery: '',
     selectedTabType: 'PDF',

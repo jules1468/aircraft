@@ -232,6 +232,16 @@
       "Retry": "Opnieuw proberen",
       "Title": "Lokale Bestanden"
     },
+    "MSFS2024Charts": {
+      "Both": "Beide",
+      "EstablishingConnection": "Verbinding tot stand brengen...",
+      "FailedToEstablishConnection": "Verbinding tot stand brengen is mislukt.",
+      "FileName": "Bestandsnaam",
+      "Image": "Afbeelding",
+      "Pdf": "Pdf",
+      "Retry": "Opnieuw proberen",
+      "Title": "MSFS2024 charts"
+    },
     "Navigraph": {
       "AirportDoesNotExist": "Luchthaven bestaat niet",
       "AuthenticateWithNavigraph": "Authenticeren met Navigraph",

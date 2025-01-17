@@ -159,6 +159,26 @@ export const ThirdPartyOptionsPage = () => {
               </div>
             </SettingItem>
           </TooltipWrapper>
+          <TooltipWrapper text={t('Settings.ThirdPartyOptions.TT.MSFS2024ApiToken')}>
+            <SettingItem name={t('Settings.ThirdPartyOptions.MSFS2024ApiToken')}>
+              <div className="flex flex-row">
+                <SimpleInput
+                  className="w-30 mr-5 text-center"
+                  value={overrideSimbriefDisplay}
+                  onBlur={(value) => handleOverrideSimbriefIDInput(value.replace(/\s/g, ''))}
+                  onChange={(value) => setOverrideSimbriefDisplay(value)}
+                />
+
+                <div
+                  className="flex w-min shrink items-center justify-center rounded-md border-2 border-utility-red bg-utility-red p-2
+                                    text-center text-theme-body transition duration-100 hover:bg-theme-body hover:text-utility-red"
+                  onClick={handleOverrideSimBriefIDDelete}
+                >
+                  <IconTrash />
+                </div>
+              </div>
+            </SettingItem>
+          </TooltipWrapper>
 
           <SettingItem name={t('Settings.AtsuAoc.AutomaticallyImportSimBriefData')}>
             <Toggle
